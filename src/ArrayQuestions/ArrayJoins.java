@@ -1,6 +1,8 @@
 package ArrayQuestions;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 import com.google.common.collect.ObjectArrays;
@@ -30,7 +32,7 @@ public class ArrayJoins {
 		}
 
 		System.out.println("----------");
-		
+
 		// Google Guava:
 		// for object arrays:
 		String allTeam[] = ObjectArrays.concat(batsmen, bowlers, String.class);
@@ -49,6 +51,25 @@ public class ArrayJoins {
 		for (int i : p3) {
 			System.out.println(i);
 		}
+
+		String[] p = { "Rohit", "Virat", "Dhawan", "Shreyas", "Rishabh", "Shubhman" };
+		ArrayList<String> pr = new ArrayList<String>(Arrays.asList(p));
+		pr.remove("Dhawan");		
+		System.out.println(pr);
+
+		//
+//		String[] geeks = { "Rahul", "Utkarsh", "Shubham", "Neelam" };
+//
+//		List<String> al = new ArrayList<String>(Arrays.asList(geeks));
+//		System.out.println(al);
+//
+//// Adding some more values to the List.
+//		al.add("Shashank");
+//		al.add("Nishant");
+//		al.remove("Rahul");
+//
+//		System.out.println("\nArrayList After adding two" + " more Geeks: ");
+//		System.out.println(al);
 
 	}
 
