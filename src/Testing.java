@@ -1,38 +1,40 @@
-import java.io.File;
-import java.util.Arrays;
+import java.util.Scanner;
+
+import org.apache.commons.lang3.StringUtils;
 
 public class Testing {
 
 	public static void main(String[] args) {
 
-//		System.setProperty("webdriver.chrome.driver", "/Users/naveenautomationlabs/Downloads/chromedriver");
-//		System.setProperty("webdriver.chrome.verboseLogging", "true");
-//
-//
-//		WebDriver driver = new ChromeDriver();
-//		driver.get("http://www.google.com");
+		String inputString = "naveen automation labs          "
+				+ "\n testing          automation"
+				+ "\n community"
+				+ "\n f r a m e w o r k";
 		
-		String drName = "/Users/naveenautomationlabs/Downloads";
 		
-		File dir = new File(drName);
-		File f[] = dir.listFiles();
-		Arrays.sort(f);
-		
-		for(File e : f) {
-			if(e.isFile()) {
-				System.out.println("File: " + e.getName() + " " + e.getPath());
-			}
-			else if(e.isDirectory()) {
-				System.out.println("Dir: " + e.getName());
-			}
-			else {
-				System.out.println("unknown: " + e.getName());
-			}
+		String myArr[] = inputString.split("\\s");
+		StringBuffer newStr = new StringBuffer();
+		for(String s : myArr) {
+			newStr.append(s);
 		}
-		
-		
-		
-		
+		System.out.println(newStr);
+//
+//
+//		String stringWithoutSpaces = "";
+//
+//		for (int i = 0; i < inputString.length(); i++) {
+//			if ((inputString.charAt(i) != ' ') && (inputString.charAt(i) != '\t')) {
+//				stringWithoutSpaces = stringWithoutSpaces + inputString.charAt(i);
+//			}
+//		}
+//
+//		System.out.println("Input String : " + inputString);
+//
+//		System.out.println("Input String Without Spaces : " + stringWithoutSpaces);
+//
+//		String finalString = StringUtils.deleteWhitespace("naveen automation labs" + "testing" + "community");
+//		System.out.println(finalString);
+
 	}
 
 }

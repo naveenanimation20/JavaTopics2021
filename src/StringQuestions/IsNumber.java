@@ -1,21 +1,23 @@
 package StringQuestions;
 
+import java.util.HashSet;
+
 //Check given number is valid or not
 
 //Check given phone number is valid -- 10 digits
 //Check given CC number is valid -- 16 digits
 
 public class IsNumber {
-	
+
 	public static boolean isCorrectPhonerNumber(String number) {
-		 //return number.matches("[0-9]{10}");
-		 return number.matches("\\d{10}");
+		// return number.matches("[0-9]{10}");
+		return number.matches("\\d{10}");
 	}
-	
+
 	public static boolean isCorrectNumber(String number) {
 		return number.matches("^(-?\\d+\\.)?-?\\d+$");
 	}
-	
+
 	public static boolean isCorrectPhNumber(String number) {
 		if (number.length() == 10 && isCorrectNumber(number)) {
 			System.out.println("valid ph number: " + number);
@@ -67,7 +69,7 @@ public class IsNumber {
 		System.out.println(isValidCCNumber("8989876789909898"));
 		System.out.println(isCorrectPhonerNumber("987654567890"));
 		System.out.println(isCorrectPhonerNumber("9999878987"));
-		
+
 		System.out.println(isCorrectNumber("100"));
 		System.out.println(isCorrectNumber("100.12"));
 		System.out.println(isCorrectNumber("-100.12"));
@@ -78,7 +80,7 @@ public class IsNumber {
 
 		System.out.println(isCorrectPhNumber("-9898789878"));
 
-
+		
 
 	}
 
