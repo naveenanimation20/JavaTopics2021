@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Scanner;
 
 import org.apache.commons.lang3.StringUtils;
@@ -6,22 +9,22 @@ public class Testing {
 
 	public static void main(String[] args) {
 
-		String inputString = "naveen automation labs          "
-				+ "\n testing          automation"
-				+ "\n community"
+		String inputString = "naveen automation labs          " + "\n testing          automation" + "\n community"
 				+ "\n f r a m e w o r k";
-		
-		
+
 		String myArr[] = inputString.split("\\s");
 		StringBuffer newStr = new StringBuffer();
-		for(String s : myArr) {
+		for (String s : myArr) {
 			newStr.append(s);
 		}
 		System.out.println(newStr);
 		System.out.println(newStr);
 		System.out.println("hello world");
 
+		System.out.println(0.1 + 0.2);
+		System.out.println(0.1 + 0.3);
 
+		
 
 //
 //
