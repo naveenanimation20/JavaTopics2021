@@ -18,6 +18,8 @@ public class Testing {
 			newStr.append(s);
 		}
 		System.out.println(newStr);
+		System.out.println(newStr);
+
 //
 //
 //		String stringWithoutSpaces = "";
