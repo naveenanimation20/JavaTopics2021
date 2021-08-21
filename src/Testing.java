@@ -26,6 +26,7 @@ public class Testing {
 
 		System.out.println("hello naveen");
 		int i = 10;
+		System.out.println("hello naveen");
 
 		//
 		//
