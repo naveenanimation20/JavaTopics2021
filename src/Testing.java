@@ -25,24 +25,27 @@ public class Testing {
 		System.out.println(0.1 + 0.3);
 
 		System.out.println("hello naveen");
+		int i = 10;
 
-
-//
-//
-//		String stringWithoutSpaces = "";
-//
-//		for (int i = 0; i < inputString.length(); i++) {
-//			if ((inputString.charAt(i) != ' ') && (inputString.charAt(i) != '\t')) {
-//				stringWithoutSpaces = stringWithoutSpaces + inputString.charAt(i);
-//			}
-//		}
-//
-//		System.out.println("Input String : " + inputString);
-//
-//		System.out.println("Input String Without Spaces : " + stringWithoutSpaces);
-//
-//		String finalString = StringUtils.deleteWhitespace("naveen automation labs" + "testing" + "community");
-//		System.out.println(finalString);
+		//
+		//
+		// String stringWithoutSpaces = "";
+		//
+		// for (int i = 0; i < inputString.length(); i++) {
+		// if ((inputString.charAt(i) != ' ') && (inputString.charAt(i) !=
+		// '\t')) {
+		// stringWithoutSpaces = stringWithoutSpaces + inputString.charAt(i);
+		// }
+		// }
+		//
+		// System.out.println("Input String : " + inputString);
+		//
+		// System.out.println("Input String Without Spaces : " +
+		// stringWithoutSpaces);
+		//
+		// String finalString = StringUtils.deleteWhitespace("naveen automation
+		// labs" + "testing" + "community");
+		// System.out.println(finalString);
 
 	}
 
